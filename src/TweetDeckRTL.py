@@ -62,7 +62,7 @@ class TweetDeckRTL(BaseMod.Template):
                 shutil.copy(rtlScriptPath,rtlScriptDest)
                 self.info("TweetDeck patched successfully")
             else:
-                self.info("Not patching TweetDeck, perhaps its already patched?")
+                self.info("Not patching TweetDeck,\nperhaps its already patched?")
         except:
             self.info("Error while attempting to patch, Have you selected the Chrome extension folder?")
         return

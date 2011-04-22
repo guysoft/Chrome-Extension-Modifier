@@ -1,0 +1,22 @@
+Requirements
+------------
+python >= 2.7
+wxpython 2.8
+
+On Debian/Ubuntu:
+apt-get python-wxgtk2.8
+
+On windows you would have to download python and wxpython from their websites
+
+Running On Windows/Linux
+------------------------
+python src/Main.py
+
+
+GUI editing
+-----------
+The gui is built with wxglade, you can edit it graphically by opening:
+wxglade ChromeExtensionModifier.wxg
+
+Packaging on windows
+--------------------
