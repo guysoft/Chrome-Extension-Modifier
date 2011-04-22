@@ -32,11 +32,20 @@ import gui
 import TweetDeckRTL
 import os
 import os.path
+import sys
 
-CHROME_DEFAULT_PATH = "windows path" #windwos path
+CHROME_DEFAULT_PATH = "" #No Path
 if os.name == "posix":
     CHROME_DEFAULT_PATH = "~/.config/google-chrome/Default/Extensions/" #linux path
     CHROME_DEFAULT_PATH = os.path.expanduser(CHROME_DEFAULT_PATH)
+else: #windows path
+    try:
+        import windowsutils
+        applicationData = windowsutils.getApplicationData()
+        CHROME_DEFAULT_PATH = os.path.join(applicationData,"Google\Chrome\User Data\Default\Extensions")
+    except:
+        print "This is not a posix, nor is it windowsXP, not sure what OS this is"
+
     
 class framelogic(gui.MyFrame):
     '''
@@ -44,6 +53,8 @@ class framelogic(gui.MyFrame):
     '''
     def __init__(self, *args, **kwds):
         gui.MyFrame.__init__(self, *args, **kwds)
+        logoPath = os.path.join(self.getRunPath(),"Chromium_11_Logo.png")
+        self.bitmap_1.SetBitmap(wx.Bitmap(logoPath,wx.BITMAP_TYPE_ANY))
         self.TXTInput.SetValue(CHROME_DEFAULT_PATH)
         return
     
@@ -67,6 +78,15 @@ class framelogic(gui.MyFrame):
     
     def info(self,message):
         self.LBLStatus.SetLabel(message)
+        
+    def getRunPath(self):
+        '''
+        Get the path of where we are running
+        '''
+        print 'sys.argv[0] =', sys.argv[0]      # script name   (for testing)
+        print 'os.getcwd() =', os.getcwd()      # where we are  (for testing)
+        
+        return os.path.dirname(sys.argv[0])
 
 class ChromeExtensionModifier(object):
     '''
