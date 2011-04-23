@@ -1,17 +1,26 @@
+Chrome Extension Modifier
+-------------------------
+Written by Guy Sheffer <guysoft at gmail.com>
+
 Requirements
 ------------
-python >= 2.7
-wxpython 2.8
+Python >= 2.7
+wxPython 2.8
 
 On Debian/Ubuntu:
 apt-get python-wxgtk2.8
 
-On windows you would have to download python and wxpython from their websites
+On Windows you would have to download python and wxpython from their websites
 
-Running On Windows/Linux
-------------------------
+Running on Linux
+----------------
 python src/Main.py
 
+Running on Windows
+------------------
+Download and run TweetDeckRTLPatcher.exe
+
+From: http://bit.ly/TweetDeckRTLPatch
 
 GUI editing
 -----------
