@@ -6,7 +6,7 @@ A cross-platform Google Chrome/Chromium extension Modifier,
 as a workaround issue: http://code.google.com/p/chromium/issues/detail?id=77440
 
 Currently modifies TweetDeck to have right-to-left support.
-Built modularly to provide a toolkit go modify any Chrome extension
+Built modularly to provide a toolkit to modify any Chrome extension
 
 Tested on Linux and Windows 
 
