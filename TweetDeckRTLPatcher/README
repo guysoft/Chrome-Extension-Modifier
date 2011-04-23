@@ -1,0 +1,34 @@
+Chrome Extension Modifier
+-------------------------
+Written by Guy Sheffer <guysoft at gmail.com>
+
+Requirements
+------------
+Python >= 2.7
+wxPython 2.8
+
+On Debian/Ubuntu:
+apt-get python-wxgtk2.8
+
+On Windows you would have to download python and wxpython from their websites
+
+Running on Linux
+----------------
+python src/Main.py
+
+Running on Windows
+------------------
+Download and run TweetDeckRTLPatcher.exe
+
+From: http://bit.ly/TweetDeckRTLPatch
+
+GUI editing
+-----------
+The gui is built with wxglade, you can edit it graphically by opening:
+wxglade ChromeExtensionModifier.wxg
+
+Packaging on Windows
+--------------------
+You can build an executable with pyinstaller:  http://www.pyinstaller.org/
+(Note you will need pywin32 for pyinstaller: http://sourceforge.net/projects/pywin32/)
+The binary unfortunately is huge, no idea how to reduce its size
