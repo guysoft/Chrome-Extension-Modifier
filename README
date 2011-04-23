@@ -18,8 +18,8 @@ GUI editing
 The gui is built with wxglade, you can edit it graphically by opening:
 wxglade ChromeExtensionModifier.wxg
 
-Packaging on windows
+Packaging on Windows
 --------------------
-You can buiild an exacutable with pyinstaller:  http://www.pyinstaller.org/
+You can build an executable with pyinstaller:  http://www.pyinstaller.org/
 (Note you will need pywin32 for pyinstaller: http://sourceforge.net/projects/pywin32/)
-The binary unforchnatly is huge, no idea how to reduce its size
+The binary unfortunately is huge, no idea how to reduce its size
