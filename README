@@ -2,6 +2,14 @@ Chrome Extension Modifier
 -------------------------
 Written by Guy Sheffer <guysoft at gmail.com>
 
+A cross-platform Google Chrome/Chromium extension Modifier, 
+as a workaround issue: http://code.google.com/p/chromium/issues/detail?id=77440
+
+Currently modifies TweetDeck to have right-to-left support
+But built modularly to give a toolkit go modify any Crome extension
+
+Tested on Linux and Windows 
+
 Requirements
 ------------
 Python >= 2.7
