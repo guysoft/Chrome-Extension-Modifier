@@ -50,7 +50,9 @@ function runOnTweets(callback) {
 					statuses[i].style.direction="rtl";
 					statuses[i].style.textAlign="right";
 					if (nonLatinHash.test(tweetText)) {
+					  /*
 						statuses[i].innerHTML = tweetText.replace(nonLatinHash, '#<a href="http://twitter.com/search?q=$1" rel="hashtag" class="embed">$1</a>');
+	*/
 					}
 				}
 			}
